@@ -4,7 +4,7 @@ metadata:
   name: cs-net-svcs-sa
   namespace: config-control
   annotations:
-    configmanagement.gke.io/cluster-selector: select-kcc-root
+    configsync.gke.io/cluster-selector: select-kcc-root
 spec:
   displayName: ConfigSync NetServices SA
 ---
@@ -14,7 +14,7 @@ metadata:
   name: cs-net-svcs-sa-wi
   namespace: config-control
   annotations:
-    configmanagement.gke.io/cluster-selector: select-kcc-root
+    configsync.gke.io/cluster-selector: select-kcc-root
 spec:
   member: serviceAccount:kcc-root.svc.id.goog[config-management-system/root-reconciler]
   role: roles/iam.workloadIdentityUser

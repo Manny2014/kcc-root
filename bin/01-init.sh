@@ -51,3 +51,7 @@ gcloud iam service-accounts add-iam-policy-binding \
 gcloud projects add-iam-policy-binding "kcc-root" \
     --member="serviceAccount:kcc-sa@kcc-root.iam.gserviceaccount.com" \
     --role="roles/owner"
+
+gcloud projects add-iam-policy-binding "223199570693" \
+    --member="serviceAccount:kcc-sa@kcc-root.iam.gserviceaccount.com" \
+    --role="roles/resourcemanager.folderAdmin"

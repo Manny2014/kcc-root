@@ -58,4 +58,4 @@ gcloud organizations add-iam-policy-binding "223199570693"  \
 
 gcloud organizations add-iam-policy-binding "223199570693"  \
     --member="serviceAccount:kcc-sa@kcc-root.iam.gserviceaccount.com" \
-    --role=roles/resourcemanager.projectCreato
+    --role=roles/resourcemanager.projectCreator

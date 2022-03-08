@@ -4,7 +4,7 @@ metadata:
   name: cs-app-svcs-sa
   namespace: config-control
   annotations:
-    configmanagement.gke.io/cluster-selector: select-kcc-root
+    configsync.gke.io/cluster-name-selector: krmapihost-root-cluster
 spec:
   displayName: ConfigSync AppServices SA
 ---
@@ -14,7 +14,7 @@ metadata:
   name: cs-app-svcs-sa-wi
   namespace: config-control
   annotations:
-    configmanagement.gke.io/cluster-selector: select-kcc-root
+    configsync.gke.io/cluster-name-selector: krmapihost-root-cluster
 spec:
   member: serviceAccount:kcc-root.svc.id.goog[config-management-system/root-reconciler]
   role: roles/iam.workloadIdentityUser

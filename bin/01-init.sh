@@ -33,9 +33,21 @@ export KUBECONFIG=$(pwd)/.kcc-kube.yaml
 gcloud container clusters get-credentials krmapihost-root-cluster --region us-central1 --project kcc-root
  
 # PERMISSION
+
 export SA_EMAIL="$(kubectl get ConfigConnectorContext -n config-control -o jsonpath='{.items[0].spec.googleServiceAccount}' 2> /dev/null)"
 
 gcloud projects add-iam-policy-binding "kcc-root" \
     --member "serviceAccount:${SA_EMAIL}" \
     --role "roles/owner" \
     --project "kcc-root"
+
+# CNRM CLUSTER MODE
+gcloud iam service-accounts create kcc-sa --project "kcc-root"
+gcloud iam service-accounts add-iam-policy-binding \
+    kcc-sa@kcc-root.iam.gserviceaccount.com \
+    --member="serviceAccount:kcc-root.svc.id.goog[cnrm-system/cnrm-controller-manager]" \
+    --role="roles/iam.workloadIdentityUser"
+
+gcloud projects add-iam-policy-binding "kcc-root" \
+    --member="serviceAccount:kcc-sa@kcc-root.iam.gserviceaccount.com" \
+    --role="roles/owner"

@@ -10,4 +10,4 @@ metadata:
 spec:
   name: Shared Network Host Project
   folderRef:
-    name: app-services
+    name: net-services

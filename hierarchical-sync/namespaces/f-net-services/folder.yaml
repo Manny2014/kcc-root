@@ -4,5 +4,3 @@ metadata:
   name: net-services
 spec:
   displayName: Network Services
-  organizationRef:
-    external: "223199570693"

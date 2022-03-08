@@ -4,5 +4,3 @@ metadata:
   name: app-services
 spec:
   displayName: App Services
-  organizationRef:
-    external: "223199570693"

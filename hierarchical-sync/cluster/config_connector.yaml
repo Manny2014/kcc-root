@@ -3,6 +3,5 @@ kind: ConfigConnector
 metadata:
   name: configconnector.core.cnrm.cloud.google.com
 spec:
-  mode: namespaced
-#   mode: cluster
-#   googleServiceAccount: kcc-sa@kcc-root.iam.gserviceaccount.com #service-430475262222@gcp-sa-yakima.iam.gserviceaccount.com # TODO: THIS WILL CHANGE WHEN KCC-ROOT IS DELETED/RECREATED
+  mode: cluster
+  googleServiceAccount: kcc-sa@kcc-root.iam.gserviceaccount.com #service-430475262222@gcp-sa-yakima.iam.gserviceaccount.com # TODO: THIS WILL CHANGE WHEN KCC-ROOT IS DELETED/RECREATED

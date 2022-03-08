@@ -2,7 +2,7 @@ apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
 kind: Folder
 metadata:
   name: app-services
-  annotations:
-    cnrm.cloud.google.com/organization-id: "223199570693"
 spec:
   displayName: App Services
+  organizationRef:
+    external: "223199570693"

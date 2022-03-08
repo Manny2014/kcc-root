@@ -6,7 +6,7 @@ metadata:
     cnrm.cloud.google.com/auto-create-network: "false"
   labels:
     label-one: "ss-net"
-  name: shared-net
+  name: shared-net-0101
 spec:
   folderRef:
     name: app-services

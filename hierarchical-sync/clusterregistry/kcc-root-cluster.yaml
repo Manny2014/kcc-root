@@ -4,4 +4,3 @@ metadata:
   name: kcc-root
   labels:
     role: kcc-root
-    location: us-central1

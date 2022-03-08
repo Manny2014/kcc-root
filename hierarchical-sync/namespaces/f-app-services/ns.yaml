@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: f-app-services
   annotations:
-    configsync.gke.io/cluster-name-selector: krmapihost-root-cluster
+    configmanagement.gke.io/cluster-selector: select-kcc-root

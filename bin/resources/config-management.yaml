@@ -15,4 +15,4 @@ spec:
     syncRepo: https://github.com/Manny2014/kcc-root
     # secretType: gnonecpsenrviceaccount
     # gcpServiceAccountEmail: config-sync-sa@PROJECT_ID.iam.gserviceaccount.com
-  sourceFormat: hierarchical #unstructured
+  sourceFormat: hierarchy #unstructured

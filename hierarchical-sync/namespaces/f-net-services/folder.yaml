@@ -3,6 +3,6 @@ kind: Folder
 metadata:
   name: net-services
 spec:
-  displayName: Network Services
+  displayName: net-services
   organizationRef:
     external: "223199570693"

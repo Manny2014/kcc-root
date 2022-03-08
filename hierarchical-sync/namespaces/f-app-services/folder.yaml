@@ -3,6 +3,6 @@ kind: Folder
 metadata:
   name: app-services
 spec:
-  displayName: App Services
+  displayName: app-services
   organizationRef:
     external: "223199570693"

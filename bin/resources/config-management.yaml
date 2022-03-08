@@ -1,0 +1,18 @@
+apiVersion: configmanagement.gke.io/v1
+kind: ConfigManagement
+metadata:
+  name: config-management
+spec:
+  enableMultiRepo: true
+  enableLegacyFields: true
+  policyController:
+    enabled: true
+  clusterName: krmapihost-root-cluster
+  git:
+    policyDir: sync
+    secretType: none
+    syncBranch: master
+    syncRepo: https://github.com/Manny2014/kcc-root
+    # secretType: gnonecpsenrviceaccount
+    # gcpServiceAccountEmail: config-sync-sa@PROJECT_ID.iam.gserviceaccount.com
+  sourceFormat: unstructured

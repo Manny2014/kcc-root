@@ -1,0 +1,9 @@
+# USED TO FORCE DELETION
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: select-kcc-fake
+spec:
+  selector:
+    matchLabels:
+      role: kcc-fake

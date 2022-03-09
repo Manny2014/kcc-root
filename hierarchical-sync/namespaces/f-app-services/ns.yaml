@@ -4,4 +4,4 @@ kind: Namespace
 metadata:
   name: f-app-services
   annotations:
-    configmanagement.gke.io/cluster-selector: select-fake #select-kcc-root
+    configmanagement.gke.io/cluster-selector: select-kcc-fake #select-kcc-root

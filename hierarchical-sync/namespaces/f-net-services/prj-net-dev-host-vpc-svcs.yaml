@@ -48,7 +48,7 @@ metadata:
   name: compute.googleapis.com
 spec:
   projectRef:
-    name: ej-playground-001
+    name: net-dev-host-vpc
 ---
 apiVersion: serviceusage.cnrm.cloud.google.com/v1beta1
 kind: Service
@@ -61,4 +61,4 @@ metadata:
   name: container.googleapis.com
 spec:
   projectRef:
-    name: ej-playground-001
+    name: net-dev-host-vpc

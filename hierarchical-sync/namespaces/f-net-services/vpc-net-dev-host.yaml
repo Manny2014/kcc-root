@@ -1,0 +1,40 @@
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeNetwork
+metadata:
+  labels:
+    kcc: works
+  name: dev-net
+spec:
+  routingMode: REGIONAL
+  autoCreateSubnetworks: false
+---
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeSubnetwork
+metadata:
+  name: us-central1-0
+spec:
+  ipCidrRange: 10.2.0.0/16
+  region: us-central1
+  description: US Central subnet 0
+  privateIpGoogleAccess: true
+  networkRef:
+    name: dev-net
+  secondaryIpRange:
+  - ipCidrRange: us-central1-0-scidr-0
+    rangeName: 172.16.0.0/19
+  - ipCidrRange: us-central1-0-scidr-32
+    rangeName: 172.16.32.0/19
+  - ipCidrRange: us-central1-0-scidr-64
+    rangeName: 172.16.64.0/19
+  - ipCidrRange: us-central1-0-scidr-96
+    rangeName: 172.16.96.0/19
+  - ipCidrRange: us-central1-0-scidr-128
+    rangeName: 172.16.128.0/19
+  - ipCidrRange: us-central1-0-scidr-160
+    rangeName: 172.16.160.0/19
+  - ipCidrRange: us-central1-0-scidr-192
+    rangeName: 172.16.192.0/19
+  logConfig:
+    aggregationInterval: INTERVAL_10_MIN
+    flowSampling: 0.5
+    metadata: INCLUDE_ALL_METADATA

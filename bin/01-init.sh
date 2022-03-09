@@ -72,3 +72,9 @@ gcloud organizations add-iam-policy-binding "223199570693"  \
 gcloud organizations add-iam-policy-binding "223199570693"  \
     --member="serviceAccount:kcc-sa@$KCC_ROOT_PROJECT.iam.gserviceaccount.com" \
     --role=roles/billing.user
+
+# ACCESS TO CREATED SHARED VPC's
+## TODO: IF SPLIT TO NONE-CLUSTER MODE, CAN BE SPLIT
+gcloud organizations add-iam-policy-binding "223199570693"  \
+    --member="serviceAccount:kcc-sa@$KCC_ROOT_PROJECT.iam.gserviceaccount.com" \
+    --role=roles/compute.xpnAdmin

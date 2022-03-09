@@ -6,7 +6,7 @@ metadata:
     cnrm.cloud.google.com/auto-create-network: "false"
   labels:
     label-one: "ss-net"
-  name: shared-net-ejc-2022
+  name: shared-net-ejc-201
 spec:
   name: Shared Network Host Project
   folderRef:

@@ -46,8 +46,9 @@ gcloud projects add-iam-policy-binding $KCC_ROOT_PROJECT \
 
 # CNRM CLUSTER MODE
 gcloud iam service-accounts create kcc-sa --project $KCC_ROOT_PROJECT 
+
 gcloud iam service-accounts add-iam-policy-binding \
-    kcc-sa@kcc-root.iam.gserviceaccount.com \
+    kcc-sa@$KCC_ROOT_PROJECT.iam.gserviceaccount.com \
     --member="serviceAccount:$KCC_ROOT_PROJECT.svc.id.goog[cnrm-system/cnrm-controller-manager]" \
     --role="roles/iam.workloadIdentityUser"
 

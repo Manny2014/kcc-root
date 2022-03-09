@@ -5,9 +5,9 @@ metadata:
   annotations:
     cnrm.cloud.google.com/auto-create-network: "false"
   labels:
-    label-one: "ss-net"
-  name: shared-net-ejc-201
+    environment: development
+  name: ej-playground-001
 spec:
-  name: Shared Network Host Project
+  name: Playground Project
   folderRef:
-    name: net-services
+    name: development

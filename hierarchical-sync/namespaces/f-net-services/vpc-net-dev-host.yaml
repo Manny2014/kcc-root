@@ -80,3 +80,20 @@ spec:
     aggregationInterval: INTERVAL_10_MIN
     flowSampling: 0.5
     metadata: INCLUDE_ALL_METADATA
+---
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeFirewall
+metadata:
+  annotations:
+    cnrm.cloud.google.com/project-id: net-dev-host-vpc
+  name: egress-internet
+spec:
+  allow:
+  - protocol: all
+  destinationRanges:
+  - 0.0.0.0/0
+  direction: EGRESS
+  networkRef:
+    name: dev-net
+  priority: 1000
+  resourceID: egress-internet

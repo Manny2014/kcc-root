@@ -3,6 +3,9 @@ kind: ComputeNetwork
 metadata:
   labels:
     kcc: works
+  annotations: 
+    # TODO: WHY CAN'T REF RESOURCE?
+    cnrm.cloud.google.com/project-id: "net-dev-host-vpc"
   name: dev-net
 spec:
   routingMode: REGIONAL

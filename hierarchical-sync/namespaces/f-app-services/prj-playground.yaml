@@ -14,3 +14,15 @@ spec:
   billingAccountRef:
     # Replace "${BILLING_ACCOUNT_ID?}" with the numeric ID for your billing account
     external: "01446E-E7CA2C-85746A"
+---
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeSharedVPCServiceProject
+metadata:
+  annotations:
+    # Replace ${HOST_PROJECT_ID?} with the ID of a Shared VPC host project to associate.
+    # TODO: Lame...
+    cnrm.cloud.google.com/project-id: "net-dev-host-vpc"
+  name: ej-playground-001
+spec:
+  projectRef:
+    name: ej-playground-001

@@ -95,5 +95,5 @@ spec:
   direction: EGRESS
   networkRef:
     name: dev-net
-  priority: 1000
+  priority: 65535
   resourceID: egress-internet

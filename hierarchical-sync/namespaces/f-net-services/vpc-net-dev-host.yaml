@@ -29,17 +29,17 @@ spec:
   secondaryIpRange:
   - ipCidrRange: 172.16.0.0/19
     rangeName: us-central1-0-scidr-0
-  - ipCidrRange: 172.16.0.0/32
+  - ipCidrRange: 172.16.32.0/19
     rangeName: us-central1-0-scidr-32
-  - ipCidrRange: 172.16.0.0/64
+  - ipCidrRange: 172.16.64.0/19
     rangeName: us-central1-0-scidr-64
-  - ipCidrRange: 172.16.0.0/96
+  - ipCidrRange: 172.16.96.0/19
     rangeName: us-central1-0-scidr-96
-  - ipCidrRange: 172.16.0.0/128
+  - ipCidrRange: 172.16.128.0/19
     rangeName: us-central1-0-scidr-128
-  - ipCidrRange: 172.16.0.0/160
+  - ipCidrRange: 172.16.160.0/19
     rangeName: us-central1-0-scidr-160
-  - ipCidrRange: 172.16.0.0/192
+  - ipCidrRange: 172.16.192.0/19
     rangeName: us-central1-0-scidr-192
   logConfig:
     aggregationInterval: INTERVAL_10_MIN

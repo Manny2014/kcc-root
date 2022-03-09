@@ -95,5 +95,25 @@ spec:
   direction: EGRESS
   networkRef:
     name: dev-net
-  priority: 65535
+  priority: 65535 # 0 -> Highest Priority, 65535 -> Lowest Priority 
   resourceID: egress-internet
+---
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeFirewall
+metadata:
+  annotations:
+    cnrm.cloud.google.com/project-id: net-dev-host-vpc
+  name: default-allow-internal
+spec:
+  allow:
+  - protocol: all
+  direction: INGRESS
+  networkRef:
+    name: dev-net
+  priority: 65535
+  resourceID: default-allow-internal
+  sourceRanges:
+  - 10.2.0.0/16
+  - 10.3.0.0/16
+  - 172.16.0.0/16
+  - 172.17.0.0/16

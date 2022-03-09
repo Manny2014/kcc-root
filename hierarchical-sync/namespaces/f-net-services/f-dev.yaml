@@ -1,0 +1,10 @@
+apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
+kind: Folder
+metadata:
+  name: development
+  labels:
+    environment: development
+spec:
+  displayName: development
+  folderRef:
+    name: net-services

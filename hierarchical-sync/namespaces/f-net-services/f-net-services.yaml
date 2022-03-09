@@ -2,6 +2,8 @@ apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
 kind: Folder
 metadata:
   name: net-services
+  labels:
+    role: network-services
 spec:
   displayName: net-services
   organizationRef:

@@ -8,6 +8,7 @@ gcloud projects create $KCC_ROOT_PROJECT
 # ENABLE SERVICES
 gcloud services enable krmapihosting.googleapis.com \
     container.googleapis.com \
+    cloudbilling.googleapis.com \
     cloudresourcemanager.googleapis.com --project=$KCC_ROOT_PROJECT
 
 # CREATE VPC
@@ -63,3 +64,11 @@ gcloud organizations add-iam-policy-binding "223199570693"  \
 gcloud organizations add-iam-policy-binding "223199570693"  \
     --member="serviceAccount:kcc-sa@$KCC_ROOT_PROJECT.iam.gserviceaccount.com" \
     --role=roles/resourcemanager.projectCreator
+
+# Note: To link Project resources to Cloud Billing accounts, 
+# your Config Connector IAM service account must have roles/billing.user on the Cloud Billing account, 
+# and the IAM service account must belong to a project with the Cloud Billing API enabled.
+
+gcloud organizations add-iam-policy-binding "223199570693"  \
+    --member="serviceAccount:kcc-sa@$KCC_ROOT_PROJECT.iam.gserviceaccount.com" \
+    --role=roles/billing.user

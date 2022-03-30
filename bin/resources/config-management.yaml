@@ -13,7 +13,7 @@ spec:
     enabled: true
   clusterName: krmapihost-root-cluster
   git:
-    policyDir: unstructured/root
+    policyDir: unstructured
     secretType: none
     syncBranch: master
     syncRepo: https://github.com/Manny2014/kcc-root

@@ -1,2 +1,7 @@
 resources: 
 - dev-host-vpc
+
+
+# FORCE DELETE
+commonAnnotations:
+  configmanagement.gke.io/cluster-selector: select-kcc-fake

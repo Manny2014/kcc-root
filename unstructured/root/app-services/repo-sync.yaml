@@ -1,0 +1,12 @@
+apiVersion: configsync.gke.io/v1alpha1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: f-app-services
+spec:
+  sourceFormat: unstructured
+  git:
+    policyDir: unstructured/app-services
+    secretType: none
+    syncBranch: master
+    syncRepo: https://github.com/Manny2014/kcc-root

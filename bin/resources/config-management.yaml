@@ -5,14 +5,18 @@ metadata:
 spec:
   enableMultiRepo: true
   enableLegacyFields: true
+  # hierarchyController:
+  #   enabled: true
+  #   # Set to true to enable hierarchical observability:
+  #   enablePodTreeLabels: true
   policyController:
     enabled: true
   clusterName: krmapihost-root-cluster
   git:
-    policyDir: hierarchical-sync
+    policyDir: unstructured/root
     secretType: none
     syncBranch: master
     syncRepo: https://github.com/Manny2014/kcc-root
     # secretType: gnonecpsenrviceaccount
     # gcpServiceAccountEmail: config-sync-sa@PROJECT_ID.iam.gserviceaccount.com
-  sourceFormat: hierarchy #unstructured
+  sourceFormat: unstructured

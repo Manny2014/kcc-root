@@ -1,0 +1,6 @@
+resources:
+- resources/services.yaml
+- resources/vpc-host.yaml
+- resources/vpc.yaml
+
+namespace: dev-primary-001 # ALSO THE PROJECT NAME

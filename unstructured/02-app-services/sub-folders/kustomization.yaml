@@ -1,18 +1,17 @@
 resources:
-- 00-cluster
-- 01-net-services
-- 02-app-services
-- 99-clusterregistry
+- dev.yaml
 
+# THIS WILL GO UNDER THE app-services folder/ns
+namespace: app-services
 
 patchesJson6902:
 - target:
     group: "resourcemanager.cnrm.cloud.google.com" 
     version: v1beta1
-    kind: Project
+    kind: Folder
     name: ".*"
   patch: |-
     - op: add
-      path: /spec/billingAccountRef
+      path: /spec/folderRef
       value:
-        external: "01446E-E7CA2C-85746A"
+        name: app-services

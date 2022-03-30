@@ -1,0 +1,20 @@
+resources: 
+- ns.yaml
+- project.yaml
+- acm-clusterrolebinding.yaml
+- repo-sync.yaml
+
+namespace: dev-primrary-001
+
+patchesJson6902:
+- target:
+    group: "resourcemanager.cnrm.cloud.google.com" 
+    version: v1beta1
+    kind: Project
+    name: ".*"
+  patch: |-
+    - op: add
+      path: /spec/folderRef
+      value:
+        name: dev
+        namespace: app-services

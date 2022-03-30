@@ -2,6 +2,7 @@ apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
 kind: Folder
 metadata:
   name: app-services
+  namespace: app-services
 spec:
   displayName: app-services
   organizationRef:

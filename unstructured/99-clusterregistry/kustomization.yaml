@@ -1,0 +1,4 @@
+resources:
+- kcc-root-cluster.yaml
+- kcc-root-selector.yaml
+- kcc-fake-selector.yaml

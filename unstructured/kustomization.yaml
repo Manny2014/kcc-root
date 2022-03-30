@@ -1,6 +1,6 @@
 resources:
-- cluster
-- net-services
+- 00-cluster
+- 01-net-services
 
 patchesJson6902:
 - target:

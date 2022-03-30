@@ -6,7 +6,7 @@ metadata:
 spec:
   sourceFormat: unstructured
   git:
-    policyDir: unstructured/f-net-services
+    policyDir: unstructured/net-services
     secretType: none
     syncBranch: master
     syncRepo: https://github.com/Manny2014/kcc-root

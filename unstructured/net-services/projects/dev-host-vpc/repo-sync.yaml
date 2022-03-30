@@ -1,0 +1,11 @@
+apiVersion: configsync.gke.io/v1alpha1
+kind: RepoSync
+metadata:
+  name: repo-sync
+spec:
+  sourceFormat: unstructured
+  git:
+    policyDir: project-syncs/dev-host-vpc
+    secretType: none
+    syncBranch: master
+    syncRepo: https://github.com/Manny2014/kcc-root

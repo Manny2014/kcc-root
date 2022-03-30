@@ -1,0 +1,4 @@
+resources:
+- resources/vpc-host.yaml
+
+namespace: dev-host-vpc # ALSO THE PROJECT NAME

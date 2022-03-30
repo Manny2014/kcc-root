@@ -1,0 +1,4 @@
+resources: 
+- resources/services.yaml
+
+namespace: dev-primary # ALSO THE PROJECT NAME

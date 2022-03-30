@@ -1,12 +1,12 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: configsync.gke.io:ns-reconciler-dev-primary-002
+  name: configsync.gke.io:ns-reconciler-dev-primary
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
   name: cluster-admin
 subjects:
 - kind: ServiceAccount
-  name: ns-reconciler-dev-primary-002
+  name: ns-reconciler-dev-primary
   namespace: config-management-system

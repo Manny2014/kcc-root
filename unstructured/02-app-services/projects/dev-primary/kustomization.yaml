@@ -4,7 +4,7 @@ resources:
 - acm-clusterrolebinding.yaml
 - repo-sync.yaml
 
-namespace: dev-primary-002
+namespace: dev-primary
 
 patchesJson6902:
 - target:

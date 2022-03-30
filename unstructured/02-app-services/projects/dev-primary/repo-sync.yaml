@@ -5,7 +5,7 @@ metadata:
 spec:
   sourceFormat: unstructured
   git:
-    dir: project-syncs/dev-primary-002
+    dir: project-syncs/dev-primary
     auth: none
     branch: master
     repo: https://github.com/Manny2014/kcc-root

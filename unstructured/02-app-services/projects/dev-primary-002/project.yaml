@@ -3,6 +3,6 @@ kind: Project
 metadata:
   annotations:
     cnrm.cloud.google.com/auto-create-network: "false" # DISABLED AT ORG POLICY
-  name: dev-primary-001
+  name: dev-primary-002
 spec:
-  name: dev-primary-001
+  name: dev-primary-002

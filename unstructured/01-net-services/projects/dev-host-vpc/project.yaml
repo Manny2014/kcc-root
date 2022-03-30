@@ -3,6 +3,6 @@ kind: Project
 metadata:
   annotations:
     cnrm.cloud.google.com/auto-create-network: "false" # DISABLED AT ORG POLICY
-  name: dev-host-vpc
+  name: dev-host-vpc-001
 spec:
-  name: dev-host-vpc
+  name: dev-host-vpc-001

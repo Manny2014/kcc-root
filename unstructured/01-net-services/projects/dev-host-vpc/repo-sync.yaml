@@ -5,7 +5,7 @@ metadata:
 spec:
   sourceFormat: unstructured
   git:
-    dir: project-syncs/dev-host-vpc
+    dir: project-syncs/dev-host-vpc-001
     auth: none
     branch: master
     repo: https://github.com/Manny2014/kcc-root

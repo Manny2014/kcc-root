@@ -3,7 +3,7 @@ resources:
 - project.yaml
 - repo-sync.yaml
 
-namespace: dev-host-vpc
+namespace: dev-host-vpc-001
 
 patchesJson6902:
 - target:

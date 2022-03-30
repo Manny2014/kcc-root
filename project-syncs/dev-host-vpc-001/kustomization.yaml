@@ -2,4 +2,4 @@ resources:
 - resources/services.yaml
 - resources/vpc-host.yaml
 
-namespace: dev-host-vpc # ALSO THE PROJECT NAME
+namespace: dev-host-vpc-001 # ALSO THE PROJECT NAME

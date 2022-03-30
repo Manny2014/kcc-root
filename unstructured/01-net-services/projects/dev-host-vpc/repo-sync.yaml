@@ -5,7 +5,7 @@ metadata:
 spec:
   sourceFormat: unstructured
   git:
-    policyDir: project-syncs/dev-host-vpc
-    secretType: none
-    syncBranch: master
-    syncRepo: https://github.com/Manny2014/kcc-root
+    dir: project-syncs/dev-host-vpc
+    auth: none
+    branch: master
+    repo: https://github.com/Manny2014/kcc-root

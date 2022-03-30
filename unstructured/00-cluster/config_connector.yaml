@@ -4,4 +4,4 @@ metadata:
   name: configconnector.core.cnrm.cloud.google.com
 spec:
   mode: cluster
-  googleServiceAccount: kcc-sa@kcc-root-02.iam.gserviceaccount.com # TODO: THIS WILL CHANGE WHEN KCC-ROOT IS DELETED/RECREATED
+  googleServiceAccount: kcc-sa@kcc-root-02.iam.gserviceaccount.com # TODO: THIS WILL CHANGE WHEN KCC-ROOT IS DELETED/RECREATED (kdel ConfigConnector --all )

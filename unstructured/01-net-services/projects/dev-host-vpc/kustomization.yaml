@@ -16,3 +16,4 @@ patchesJson6902:
       path: /spec/folderRef
       value:
         name: net-dev
+        namespace: net-services

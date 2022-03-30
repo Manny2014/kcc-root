@@ -1,0 +1,17 @@
+resources: 
+- ns.yaml
+- project.yaml
+
+namespace: dev-host-vpc
+
+patchesJson6902:
+- target:
+    group: "resourcemanager.cnrm.cloud.google.com" 
+    version: v1beta1
+    kind: Project
+    name: ".*"
+  patch: |-
+    - op: add
+      path: /spec/folderRef
+      value:
+        name: net-dev

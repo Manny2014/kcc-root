@@ -1,0 +1,14 @@
+resources:
+- net-services
+
+patchesJson6902:
+- target:
+    group: "resourcemanager.cnrm.cloud.google.com" 
+    version: v1beta1
+    kind: Project
+    name: ".*"
+  patch: |-
+    - op: add
+      path: /spec/billingAccountRef
+      value:
+        external: "01446E-E7CA2C-85746A"

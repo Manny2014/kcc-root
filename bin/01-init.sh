@@ -1,6 +1,6 @@
 # CREATE KCC HOST PROJEC
 # --> export CLOUDSDK_CORE_PROJECT=kcc-root 
-export KCC_ROOT_PROJECT=kcc-root-02
+export KCC_ROOT_PROJECT=kcc-root-0704
 export CLOUDSDK_CORE_PROJECT=$KCC_ROOT_PROJECT
 
 gcloud projects create $KCC_ROOT_PROJECT 

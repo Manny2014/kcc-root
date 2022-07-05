@@ -1,6 +1,6 @@
 resources:
 - ns.yaml
-# - folder.yaml
+- folder.yaml
 # - sub-folders
 # - projects
 

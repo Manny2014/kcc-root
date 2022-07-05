@@ -5,6 +5,8 @@ export CLOUDSDK_CORE_PROJECT=$KCC_ROOT_PROJECT
 
 gcloud projects create $KCC_ROOT_PROJECT 
 
+# TODO: LINK BILLING ACCT MANUALLY
+
 # ENABLE SERVICES
 gcloud services enable krmapihosting.googleapis.com \
     container.googleapis.com \

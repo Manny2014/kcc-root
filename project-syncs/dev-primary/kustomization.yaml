@@ -1,7 +1,4 @@
 resources: 
-- resources/std-services.yaml
-- resources/container-services.yaml
-- resources/eventarc-services.yaml
-- resources/registry-services.yaml
+- resources
 
 namespace: dev-primary # ALSO THE PROJECT NAME

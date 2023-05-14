@@ -1,2 +1,3 @@
-resources: []
-# - ea-demo
+resources: 
+- ea-ar-demo
+# - ea-pubsub-demo

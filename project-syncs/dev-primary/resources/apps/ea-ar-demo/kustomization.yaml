@@ -1,0 +1,5 @@
+resources: 
+- iam.yaml
+- ar.yaml
+- cloudrun.yaml
+- ea-trigger.yaml

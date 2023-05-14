@@ -1,0 +1,24 @@
+apiVersion: eventarc.cnrm.cloud.google.com/v1beta1
+kind: EventarcTrigger
+metadata:
+  name: eq-ar-demo
+spec:
+  location: us-central1
+  destination:
+    cloudRunService:
+      serviceRef:
+        external: eq-ar-demo
+      region: us-central1
+  serviceAccountRef:
+    name: eq-ar-demo
+  transport:
+    pubsub:
+      topicRef:
+        name: eq-ar-demo
+  matchingCriteria:
+  - attribute: "type"
+    value: "google.cloud.audit.log.v1.written"
+  - attribute: "serviceName"
+    value: "artifactregistry.googleapis.com"
+  - attribute: "methodName"
+    value: "Docker-FinishUpload"

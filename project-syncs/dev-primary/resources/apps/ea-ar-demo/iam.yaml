@@ -1,0 +1,32 @@
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMServiceAccount
+metadata:
+  name: eq-ar-demo
+spec:
+  displayName: ExampleGSA
+---
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicyMember
+metadata:
+  name: eq-ar-demo
+spec:
+  memberFrom:
+    serviceAccountRef:
+      name: eq-ar-demo
+  role: roles/eventarc.admin
+  resourceRef:
+    kind: Project
+    name: dev-primary
+---
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicyMember
+metadata:
+  name: eq-ar-demo-cr
+spec:
+  memberFrom:
+    serviceAccountRef:
+      name: eq-ar-demo
+  role: roles/run.invoker
+  resourceRef:
+    kind: RunService
+    name: eq-ar-demo

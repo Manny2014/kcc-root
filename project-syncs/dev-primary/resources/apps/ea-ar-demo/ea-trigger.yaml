@@ -11,10 +11,6 @@ spec:
       region: us-central1
   serviceAccountRef:
     name: eq-ar-demo
-  transport:
-    pubsub:
-      topicRef:
-        name: eq-ar-demo
   matchingCriteria:
   - attribute: "type"
     value: "google.cloud.audit.log.v1.written"

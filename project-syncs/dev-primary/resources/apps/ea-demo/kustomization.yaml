@@ -1,2 +1,5 @@
 resources: 
+- iam.yaml
+- pubsub.yaml
 - cloudrun.yaml
+- ea-trigger.yaml

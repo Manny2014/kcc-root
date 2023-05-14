@@ -33,6 +33,7 @@ gcloud compute ssh <KCC_HOST> --zone us-central1-f  --tunnel-through-iap --proje
 # CREATE CONTROLLER
 # --> https://cloud.google.com/anthos-config-management/docs/how-to/config-controller-setup
 
+# DELETE CMD: gcloud anthos config controller delete root-cluster --project=$KCC_ROOT_PROJECT --location us-central1 
 gcloud anthos config controller create root-cluster --network=default --location=us-central1 --project=$KCC_ROOT_PROJECT 
 gcloud anthos config controller list
 

@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: dev-host-vpc
   annotations:
-    cnrm.cloud.google.com/project-id: dev-host-vpc
+    cnrm.cloud.google.com/project-id: dev-host-vpc-002

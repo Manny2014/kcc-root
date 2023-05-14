@@ -17,4 +17,4 @@ spec:
   - attribute: "serviceName"
     value: "artifactregistry.googleapis.com"
   - attribute: "methodName"
-    value: "Docker-FinishUpload"
+    value: "Docker-PutManifest"

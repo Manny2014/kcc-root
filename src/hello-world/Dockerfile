@@ -1,3 +1,3 @@
 FROM gcr.io/cloudrun/hello
 
-ENV TEST="5"
+ENV TEST="6"

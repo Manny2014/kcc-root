@@ -5,5 +5,5 @@ resources:
 - projects
 
 # FORCE DELETE
-commonAnnotations:
-  configmanagement.gke.io/cluster-selector: select-kcc-fake
+# commonAnnotations:
+#   configmanagement.gke.io/cluster-selector: select-kcc-fake

@@ -1,4 +1,4 @@
 resources: 
-- resources/services.yaml
+- resources/std-services.yaml
 
 namespace: dev-primary # ALSO THE PROJECT NAME

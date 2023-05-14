@@ -5,5 +5,5 @@ metadata:
     cnrm.cloud.google.com/auto-create-network: "false" # DISABLED AT ORG POLICY
   name: dev-host-vpc
 spec:
-  resourceID: dev-host-vpc-002
+  resourceID: dev-host-vpc-002 # UPDATE NS IF CHANGED
   name: dev-host-vpc

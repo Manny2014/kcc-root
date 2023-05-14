@@ -1,8 +1,8 @@
 resources:
 - ns.yaml
-# - folder.yaml
-# - sub-folders
-# - projects
+- folder.yaml
+- sub-folders
+- projects
 
 
 # FORCE DELETE

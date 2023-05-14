@@ -28,5 +28,5 @@ spec:
       name: eq-ar-demo
   role: roles/run.invoker
   resourceRef:
-    kind: RunService
-    name: eq-ar-demo
+    kind: Project
+    name: dev-primary

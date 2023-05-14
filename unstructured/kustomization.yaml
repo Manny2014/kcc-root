@@ -1,7 +1,7 @@
 resources:
 - 99-clusterregistry
 - 00-cluster
-- 01-net-services
+# - 01-net-services
 # - 02-app-services
 
 

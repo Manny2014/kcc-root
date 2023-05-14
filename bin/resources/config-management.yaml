@@ -11,6 +11,8 @@ spec:
   #   enablePodTreeLabels: true
   policyController:
     enabled: true
+    mutation:
+      enabled: true # see: https://cloud.google.com/anthos-config-management/docs/how-to/mutation
   clusterName: krmapihost-root-cluster
   git:
     policyDir: unstructured

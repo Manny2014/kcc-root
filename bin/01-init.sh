@@ -1,6 +1,6 @@
-# CREATE KCC HOST PROJEC
+# CREATE KCC HOST PROJECT
 # --> export CLOUDSDK_CORE_PROJECT=kcc-root 
-export KCC_ROOT_PROJECT=kcc-root-0704
+export KCC_ROOT_PROJECT=kcc-root-051323
 export CLOUDSDK_CORE_PROJECT=$KCC_ROOT_PROJECT
 
 gcloud projects create $KCC_ROOT_PROJECT 
@@ -11,7 +11,8 @@ gcloud projects create $KCC_ROOT_PROJECT
 gcloud services enable krmapihosting.googleapis.com \
     container.googleapis.com \
     cloudbilling.googleapis.com \
-    cloudresourcemanager.googleapis.com --project=$KCC_ROOT_PROJECT
+    cloudresourcemanager.googleapis.com \
+    serviceusage.googleapis.com --project=$KCC_ROOT_PROJECT
 
 # CREATE VPC
 gcloud compute networks create default --subnet-mode=auto --project=$KCC_ROOT_PROJECT

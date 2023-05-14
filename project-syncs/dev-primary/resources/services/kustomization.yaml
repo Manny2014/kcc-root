@@ -1,0 +1,7 @@
+resources: 
+- std-services.yaml
+- eventarc-services.yaml
+- registry-services.yaml
+- container-services.yaml
+# - build-services.yaml
+# - deploy-services.yaml

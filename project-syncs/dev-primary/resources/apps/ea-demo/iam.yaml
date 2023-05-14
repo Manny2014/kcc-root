@@ -19,3 +19,16 @@ spec:
   resourceRef:
     kind: Project
     name: dev-primary
+---
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicyMember
+metadata:
+  name: eventarctrigger-cr
+spec:
+  memberFrom:
+    serviceAccountRef:
+      name: eventarctrigger-dep
+  role: roles/run.invoker
+  resourceRef:
+    kind: RunService
+    name: eventarctrigger-dep
